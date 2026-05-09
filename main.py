@@ -1,4 +1,7 @@
 import random
+import art
+
+print(art.logo)
 
 attempts = 0
 
