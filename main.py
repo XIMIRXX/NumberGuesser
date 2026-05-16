@@ -24,6 +24,7 @@ def logic():
     if guess == a:
         print(f"You got it! The answer was {guess}.")
         start_again()
+        return
     elif guess > 100:
         print("You need to write numbers between 1 and 100")
     elif guess > a:
@@ -36,6 +37,7 @@ def logic():
     if attempts == 0:
         print("You've run out of guesses, you lose.")
         start_again()
+        return
     elif attempts > 0:
         logic()
 
